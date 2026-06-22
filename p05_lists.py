@@ -4,10 +4,10 @@ def square_all(numbers):
         result.append(i**2)
     return result
 
-def filter_greater_than(numbers, threshhold):
+def filter_greater_than(numbers, threshold):
     result=[]
     for i in numbers:
-        if i > threshhold: result.append(i)
+        if i > threshold: result.append(i)
     return result
 
 def reverse_list(items):
