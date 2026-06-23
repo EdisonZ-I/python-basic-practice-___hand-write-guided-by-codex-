@@ -469,6 +469,7 @@ def range_sum(prefix, left, right):
 
 - `prefix_sum([2, 4, 6])` 返回 `[2, 6, 12]`
 - `range_sum(prefix, left, right)` 返回原数组中从 `left` 到 `right` 的闭区间和
+- `left` 和 `right` 指的是原数组的索引，不是把 `prefix[left]` 到 `prefix[right]` 相加
 - 假设 `left` 和 `right` 都合法，且 `left <= right`
 
 自测：
@@ -476,9 +477,9 @@ def range_sum(prefix, left, right):
 ```python
 p = prefix_sum([2, 4, 6, 8])
 assert p == [2, 6, 12, 20]
-assert range_sum(p, 0, 1) == 6
-assert range_sum(p, 1, 3) == 18
-assert range_sum(p, 2, 2) == 6
+assert range_sum(p, 0, 1) == 6   # 原数组 [2, 4, 6, 8] 中 2 + 4
+assert range_sum(p, 1, 3) == 18  # 4 + 6 + 8
+assert range_sum(p, 2, 2) == 6   # 只取原数组索引 2 的元素
 ```
 
 ## 第四阶段：嵌套列表和矩阵思维
