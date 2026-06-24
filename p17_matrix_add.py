@@ -1,9 +1,9 @@
 def matrix_add(a, b):
-    '''test if same size'''
+    # test if same size
     if len(a) != len(b): return None
     for i in range( len(a) ):
-        if len(a[i]) != len(b[i]): return None
-    '''add'''
+        if ( len(a[0]) != len(a[i]) ) or ( len(a[0]) != len(b[i]) ): return None
+    # add
     result = [[] for _ in range(len(a))]
     for i in range( len(a) ):
         for j in range( len(a[i])):

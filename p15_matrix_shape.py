@@ -1,6 +1,6 @@
 def matrix_shape(matrix):
     if not matrix: return (0, 0)
-    else: return (len(matrix), len(matrix[0]))
+    elif is_rectangular(matrix): return (len(matrix), len(matrix[0]))
 
 def is_rectangular(matrix):
     if matrix:

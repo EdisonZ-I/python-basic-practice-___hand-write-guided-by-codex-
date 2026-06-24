@@ -1,4 +1,4 @@
-def dot_product(a,b):
+def dot_product(a, b):
     if len(a) != len(b): return None
     result = 0
     for i in range(len(a)):
