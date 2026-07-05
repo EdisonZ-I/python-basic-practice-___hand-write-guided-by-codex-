@@ -1,4 +1,5 @@
 def best_epoch(logs):
+    if logs ==[]: return None
     max_epoch = logs[0]["epoch"]
     max_acc = logs[0]["accuracy"]
     for i in range(len(logs)):

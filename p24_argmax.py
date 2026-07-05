@@ -1,9 +1,9 @@
 def argmax(values):
-    max = values[0]
+    max_value = values[0]
     place = 0
     for i in range(len(values)):
-        if max < values[i]:
-            max = values[i]
+        if max_value < values[i]:
+            max_value = values[i]
             place = i
     return place
 

@@ -1,5 +1,5 @@
-def train_test_split(items, test_items):
-    num_test = int(len(items) * test_items)
+def train_test_split(items, test_ratio):
+    num_test = int(len(items) * test_ratio)
     return (items[:len(items)-num_test], items[len(items)-num_test:])
 
 if __name__ == "__main__":

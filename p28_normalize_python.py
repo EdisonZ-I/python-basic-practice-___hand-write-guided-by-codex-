@@ -12,6 +12,6 @@ def min_max_normalize(values):
     return result
 
 if __name__ == "__main__":
-    min_max_normalize([10, 20, 30]) == [0.0, 0.5, 1.0]
+    assert min_max_normalize([10, 20, 30]) == [0.0, 0.5, 1.0]
     assert min_max_normalize([5, 5, 5]) == [0, 0, 0]
     assert min_max_normalize([]) == []

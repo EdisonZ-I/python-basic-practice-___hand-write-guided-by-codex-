@@ -1,16 +1,16 @@
-def label_counts(lables):
+def label_counts(labels):
     result = {}
-    for i in lables:
+    for i in labels:
         try: 
             result[i] += 1
         except:
             result[i] = 1
     return result
 
-def label_distribution(lables):
-    result = label_counts(lables)
+def label_distribution(labels):
+    result = label_counts(labels)
     for i in result.keys():
-        result[i] /= len(lables)
+        result[i] /= len(labels)
     return result
 
 if __name__ == "__main__":
