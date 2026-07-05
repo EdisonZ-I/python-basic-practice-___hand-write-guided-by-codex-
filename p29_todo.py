@@ -5,7 +5,7 @@ def add_task(tasks, title):
 
 def complete_task(tasks, index):
     result = deepcopy(tasks)
-    if 0 <= index <= len(result):
+    if 0 <= index < len(result):
         result[index]["done"]=True
     return result
 

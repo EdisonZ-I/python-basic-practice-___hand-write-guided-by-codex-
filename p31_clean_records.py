@@ -3,9 +3,9 @@ def clean_records(records):
     for i in range(len(records)):
         result.append({})
         try:
-            result[i]["name"]=records[i]["name"].strip()
-            result[i]["age"]=int(records[i]["age"])
-            result[i]["score"]=float(records[i]["score"])
+            result[-1]["name"]=records[i]["name"].strip()
+            result[-1]["age"]=int(records[i]["age"])
+            result[-1]["score"]=float(records[i]["score"])
         except:
             del result[-1]
     return result
